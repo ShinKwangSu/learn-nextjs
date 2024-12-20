@@ -1,46 +1,54 @@
-# Next.js 빌드 디렉토리
-.next/
-dist/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
-# 환경 파일
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/dist/
+
+# misc
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
 .env
 .env.local
 .env.*.local
 
-# 의존성 디렉토리
-node_modules/
+# vercel
+.vercel/
 
-# 패키지 매니저 파일
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
-# IDE 관련 파일
-.vscode/
+# IDE
 .idea/
-
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-Desktop.ini
-
-# Linux
-*~
-
-# 로그 파일
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+.vscode/
 
 # ESLint/Prettier
 .eslintcache
 .prettiercache
 
-# TypeScript 타입 결과
-*.d.ts
+# SSH/SSL
+*.key
+*.crt
 
-# 테스트 출력
-coverage/
+# Netlify
+.netlify/
